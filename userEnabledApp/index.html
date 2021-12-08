@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User-Enabled Load Manager</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>User-Enabled Electric Load Management System</h2>
+    <div class="center">
+      <h1>Login</h1>
+      <form method="post" id="login">
+        <div class="txt_field">
+          <input type="text" id="username" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" id="password" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        <input  type="submit" id="signin" value="Login">
+        <div class="signup_link">
+          Not a member? <a href="#">Signup</a>
+        </div>
+        <!--Loveday1@-->
+      </form>
+    </div>
+    <script type="text/javascript">
+      document.getElementById("signin").addEventListener("click", function (evt){
+      var username=document.getElementById("username").value;
+      var password=document.getElementById("password").value;
+      if (username=="Loveday" && password=="Loveday1@"){
+        evt.preventDefault();
+          window.location.replace("user-enabled/index.html")
+          return false;
+        }
+      else{
+          alert("Enter the correct details");
+        }
+      });
+
+      /*function signin(){
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+        if (username=="Loveday" && password=="b"){
+          location.replace("./WORKING.html")
+        }
+        else{
+          alert("Enter the correct details");
+        }
+      }*/
+    
+    </script>
+  </body>
+</html>

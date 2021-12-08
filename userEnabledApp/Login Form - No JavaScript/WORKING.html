@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loveday</title>
+</head>
+<body>
+<h1>IT WORKED!!!!!</h1>
+
+<button id="myButton">home</button>
+
+<script type="text/javascript">
+	/*document.getElementById("myButton").onclick=function(){
+		location.replace("login.html");
+	}*/
+	document.getElementById("myButton").addEventListener("click",signin)
+	function signin(){
+		var x=3;
+		if(x<4 && x>2){
+			location.replace("login.html");
+		}
+		else{
+			alert("sorry");
+		}
+		
+	}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User-Enabled Electric Load Manager</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- COLORS -->
+	<link rel="stylesheet" href="css/blue.css" title="blue"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+    <link rel="alternate stylesheet" href="css/green.css" title="green">
+	<link rel="alternate stylesheet" href="css/orange.css" title="orange">
+	<link rel="alternate stylesheet" href="css/purple.css" title="purple">
+	<link rel="alternate stylesheet" href="css/slate.css" title="slate">
+	<link rel="alternate stylesheet" href="css/yellow.css" title="yellow">
+	<link rel="alternate stylesheet" href="css/red.css" title="red">
+	<link rel="alternate stylesheet" href="css/blue-munsell.css" title="blue-munsell">
+
+	<!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+	<link rel="stylesheet" href="css/demo.css">
+
+
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.js"></script>
+    <![endif]-->
+	
+</head>
+<body>
+
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div><!-- /#st-preloader -->
+
+	<section id="home-page">
+		<div class="container-fluid home-bg">
+			<div class="row">
+				<div class="col-md-12 text-center home-page">
+					<h1>Electric Load Manager</h1>
+					<h2>Control your appliances with ease</h2>
+					<div class="container">
+						<!--this is where my buttons and functionalities go -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid home-bg">
+			<div class="manager1">
+				<button class="bt-on" value='1'><i class="fa fa-3x fa-power-off" style="color:green"></i></button>
+				<button class="bt-off" value='0'><i class="fa fa-3x fa-power-off" style="color:red"></i></button>
+			</div>
+			<p>Bathroom</p>
+			
+			<div class="manager2">
+				<button class="bt-on" value='1'><i class="fa fa-3x fa-power-off" style="color:green"></i></button>
+				<button class="bt-off" value='0'><i class="fa fa-3x fa-power-off" style="color:red"></i></button>
+			</div>
+			<p>Kitchen</p>
+
+			<div class="manager3">
+				<button class="bt-on" value='1'><i class="fa fa-3x fa-power-off" style="color:green"></i></button>
+				<button class="bt-off" value='0'><i class="fa fa-3x fa-power-off" style="color:red"></i></button>
+			</div>
+			<p>Sitting room</p>
+
+			<div class="manager4">
+				<button class="bt-on" value='1'><i class="fa fa-3x fa-power-off" style="color:green"></i></button>
+				<button class="bt-off" value='0'><i class="fa fa-3x fa-power-off" style="color:red"></i></button>
+			</div>
+			<p>Dining</p>
+
+		</div>
+	</section><!-- /#home-page -->
+	
+	
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<p>&copy; 2021 <strong></strong>. All Rights Reserved. Designed by <strong>Loveday</strong></p>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /.footer -->
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery.min.js"></script><!-- jQuery -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+	<script type="text/javascript" src="js/countdown.js"></script><!-- Countdown -->
+	<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script><!-- ajaxchimp -->
+	<script type="text/javascript" src="js/scripts.js"></script><!-- Scripts -->
+	<script type="text/javascript" src="js/functions.js"></script>
+
+	<!-- =========================================================
+	     STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
+	============================================================== -->
+	<script type="text/javascript" src="js/styleswitcher.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+	<div class="demo-style-switch" id="switch-style">
+		<a id="toggle-switcher" class="switch-button"><i class="fa fa-cog fa-spin fa-fw"></i></a>
+		<div class="switched-options">				
+			<div class="config-title">
+				Colors :
+			</div>
+			<ul class="styles">
+				<li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="Blue">
+				<div class="blue">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('purple'); return false;" title="Purple">
+				<div class="purple">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('blue-munsell'); return false;" title="Blue Munsell">
+				<div class="blue-munsell">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" title="Orange">
+				<div class="orange">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('slate'); return false;" title="Slate">
+				<div class="slate">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('green'); return false;" title="Green">
+				<div class="green">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" title="Yellow">
+				<div class="yellow">
+				</div>
+				</a></li>
+				
+				<li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="Red">
+				<div class="red">
+				</div>
+				</a></li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<!--FIREBASE -->
+
+	<script type="module">
+
+
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+  import { getDatabase,ref,update,set} from "https://www.gstatic.com/firebasejs/9.4.1/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDMCKfRUmq16zB0lX9YpVcPAcdU4EU9bj4",
+    authDomain: "user-enabled-load-management.firebaseapp.com",
+    databaseURL: "https://user-enabled-load-management-default-rtdb.firebaseio.com",
+    projectId: "user-enabled-load-management",
+    storageBucket: "user-enabled-load-management.appspot.com",
+    messagingSenderId: "1035223307087",
+    appId: "1:1035223307087:web:dc85e74aaffb35b6cbeb3a",
+    measurementId: "G-E9G70ZCSN1"
+  };
+
+  // Initialize Firebase
+  const app=initializeApp(firebaseConfig);
+
+  const db=getDatabase();
+
+
+document.querySelector(".manager1 .bt-on").onclick=function(){
+	var btn1on=document.querySelector(".manager1 .bt-on").value;
+	const userRef=ref(db,'users');
+	set(userRef,{D1:btn1on});
+}
+
+document.querySelector(".manager1 .bt-off").onclick=function(){
+	var btn1off=document.querySelector(".manager1 .bt-off").value;
+	const userRef=ref(db,'users');
+	set(userRef,{D1:btn1off});
+}
+
+document.querySelector(".manager2 .bt-on").onclick=function(){
+	var btn2on=document.querySelector(".manager2 .bt-on").value;
+	const userRef=ref(db,'users');
+	set(userRef,{D2:btn2on});
+}
+
+document.querySelector(".manager2 .bt-off").onclick=function(){
+	var btn2off=document.querySelector(".manager2 .bt-off").value;
+	const userRef=ref(db,'users');
+	set(userRef,{D2:btn2off});
+}
+
+document.querySelector(".manager3 .bt-on").onclick=function(){
+	var btn3on=document.querySelector(".manager3 .bt-on").value;
+	const userRef=ref(db,'users');
+	set(userRef,{D3:btn3on});
+}
+
+document.querySelector(".manager3 .bt-off").onclick=function(){
+	var btn3off=document.querySelector(".manager3 .bt-off").value;
+	const userRef=ref(db,'users');
+	set(userRef,{D3:btn3off});
+}
+
+document.querySelector(".manager4 .bt-on").onclick=function(){
+	var btn4on=document.querySelector(".manager4 .bt-on").value;
+	const userRef=ref(db,'users');
+	set(userRef,{D4:btn4on});
+}
+
+document.querySelector(".manager4 .bt-off").onclick=function(){
+	var btn4off=document.querySelector(".manager4 .bt-off").value;
+	const userRef=ref(db,'users')
+	set(userRef,{D4:btn4off});
+}
+  
+
+
+</script>
+
+	
+</body>
+</html>
